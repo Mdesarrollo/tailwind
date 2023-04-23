@@ -7,62 +7,116 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>Facebook</title>
 </head>
-<body class="bg-slate-500">
-    <div class="bg-white">
+<body class=" bg-slate-100">
+    <div class="bg-white shadow-xl relative">
+        <img class=" cursor-pointer top-72 left-52 h-48 w-48 rounded-full border-white border-[4px] absolute" src="/img/extra.png " alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 rounded-full absolute bg-gray-300 top-96 left-96">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
+        </svg>
+          
         <div class=" bg-[url('/img/portada.jpg')] h-96 flex items-end rounded-md bg-cover w-3/4 m-auto ">
-            <input  class="border border-black bg-white rounded-md cursor-pointer ml-auto mb-3 h-10 w-56 mr-6 font-medium" type="button" value="Editar Foto de Portada" >
+            <div class="h-96 flex items-end rounded-md bg-cover w-96  ml-auto">
+                <h1 class="flex bg-white h-10 rounded-md w-56 items-center mb-3 font-medium ml-auto mr-7 hover:bg-slate-200 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 bg-yellow mr-2 ml-3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
+                    </svg>
+                    Editar Foto de Perfil
+                </h1>
+            </div>
         </div>
         <div class="w-5/6/6 m-auto">
             <div class=" flex bg-white h-28  justify-center items-center">
                 <div class=" w-1/2 text-4xl text-center ">
                     <h1 class="font-bold ml-10 pl-96">Maicki Jordan</h1>
                 </div>
-                <div class="w-1/2 flex pl-36 ">
-                    <input class="cursor-pointer  font-medium  bg-blue-500 rounded-md text-white h-10 w-44" type="button" value="+ Agregara a Historia">
-                    <input class="cursor-pointer  font-medium rounded-md bg-gray-500 ml-3  w-32" type="button" value="Editar Perfil">
+                <div class="w-1/2 flex pl-28  ">
+                    <input class=" hover:bg-blue-600 cursor-pointer  font-medium  bg-blue-500 rounded-md text-white h-10 w-44" type="button" value="+ Agregara a Historia">
+                    <div class="flex rounded-md bg-gray-300 cursor-pointer ml-4 hover:bg-gray-400">
+                        <h1 class="font-medium  ml-3 flex items-center w-36 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" mr-3 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                            </svg>
+                            Editar Perfil
+                        </h1>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <input type="button" value="">
-                    <input type="button" value="">
-                    <input type="button" value="">
-                    <input type="button" value="">
-                    <input type="button" value="">
-                    <input type="button" value="">
-                    <input type="button" value="">
+            <hr class="border-gray-500 w-4/6 m-auto">
+            <div class=" flex bg-white h-20  justify-center items-center ">
+                <div class="mr-4">
+                    <input class="font-medium mr-16  text-gray-500 hover:bg-gray-300 h-16 rounded-md cursor-pointer " type="button" value="Publicaciones">
+                    <input class="font-medium mr-16  text-gray-500 hover:bg-gray-300 h-16 rounded-md cursor-pointer " type="button" value="Informacion">
+                    <input class="font-medium mr-16  text-gray-500 hover:bg-gray-300 h-16 rounded-md cursor-pointer " type="button" value="Fotos">
+                    <input class="font-medium mr-16  text-gray-500 hover:bg-gray-300 h-16 rounded-md cursor-pointer " type="button" value="videos">
+                    <input class="font-medium mr-16  text-gray-500 hover:bg-gray-300 h-16 rounded-md cursor-pointer " type="button" value="Registro de Visitas">  
+                    <input class="font-medium mr-16  text-gray-500 hover:bg-gray-300 h-16 rounded-md cursor-pointer " type="button" value="Mas">
+                </div>
+                <div class="bg-gray-300 rounded-md w-10 flex hover:bg-gray-400 cursor-pointer">
+                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+                      
                 </div>
             </div>
         </div>
     </div>
-    <div class=" items-center bg-white w-2/3 m-auto">
-        <div>
-            <div>
-                <div>perfil + boton</div>
-                <div>detalles y botones</div>
-                <div>fotos</div>
-                <div>amigos</div>
+    <div class=" items-center bg-slate-100 m-auto mt-4 flex rounded-md mx-48 mb-4">
+        <div class="w-2/5 ">
+            <div class="bg-white h-40 rounded-md shadow-2xl">
+                <h1 class="font-medium text-xl ml-4">Tu perfil</h1>
+                <p class="text-gray-500 ml-4">
+                    Agrega algunos datos para conectarte con 
+                    más amigos y para que te puedan conocer 
+                    mejor.
+                </p>
+                <input class=" hover:bg-blue-600 bg-blue-500 rounded-md w-80 text-white ml-7 mr-3 mt-4 h-8 cursor-pointer" type="button" value="Empezar">
+            </div>
+            <div class="bg-white h-64 rounded-md mt-4  shadow-2xl">
+                <h1 class="font-medium text-xl ml-7 ">Detalles</h1>
+                <input class=" hover:bg-gray-400 font-medium block text-center text-black bg-gray-300 border m-auto rounded-md w-80 mt-4 h-9 cursor-pointer ml-7 mr-3" type="button" value="Agregar Presentacion">
+                <input class=" hover:bg-gray-400 font-medium block text-center text-black bg-gray-300 border m-auto rounded-md w-80 mt-4 h-9 cursor-pointer ml-7 mr-3" type="button" value="Editar Detalles">
+                <input class=" hover:bg-gray-400 font-medium block text-center text-black bg-gray-300 border m-auto rounded-md w-80 mt-4 h-9 cursor-pointer ml-7 mr-3" type="button" value="Agregar Pasatiempos">
+                <input class=" hover:bg-gray-400 font-medium block text-center text-black bg-gray-300 border m-auto rounded-md w-80 mt-4 h-9 cursor-pointer ml-7 mr-3" type="button" value="Agregar Destacados">
+            </div>
+            <div class="flex bg-white rounded-md mt-4 h-16 items-center shadow-2xl">
+                <h1 class="font-medium text-xl mr-24 ml-4" >Fotos</h1>
+                <h1 class="text-blue-500 font-medium text-base cursor-pointer block hover:bg-gray-100 w-44 text-center pt-1 rounded-md h-8">Ver Todas las Fotos</h1>
+            </div>
+            <div class="flex bg-white rounded-md mt-4 h-16 items-center shadow-2xl" >
+                <h1 class="font-medium text-xl mr-16 ml-4 " >Amigos</h1>
+                <h1 class="text-blue-500 font-medium text-base cursor-pointer block hover:bg-gray-100 w-44 text-center pt-1 rounded-md h-8">Ver Todas los Amigos</h1>
             </div>
             <div>
-                <div>
-                    <div>comentarios</div>
-                    <div>
-                        <div>videos</div>
-                        <div>fotos</div>
-                    </div>
+                <p class="text-xs text-gray-500 mt-3">
+                    Privacidad  · Condiciones  · Publicidad  · Opciones de anuncios   · Cookies  ·   · Meta © 2023
+                </p>
+            </div>
+        </div>
+        <div class="w-2/4 bg-white ml-5 rounded-md border-black border">
+            <div class="border border-yellow-200 ">
+                <div class="relative border border-red-600 flex h-12  items-center">
+                    <img class=" ml-4 cursor-pointer  h-10 w-10 rounded-full absolute" src="/img/extra.png " alt="">
+                    <input class=" text-gray-300 bg-gray-100 hover:bg-gray-200 cursor-pointer w-5/6 border border-gray-500 rounded-3xl ml-16 h-10" type="text" placeholder="¿Que estas pensando?">
                 </div>
+                <hr class="border border-gray-400">
                 <div>
-                    <div>publicaciones mas boton</div>
-                    <div>
-                        <div>vista lista</div>
-                        <div>vista cuadricula</div>
-                    </div>
+                    <div>videos</div>
+                    <div>fotos</div>
                 </div>
+            </div>
+            <div>
+                <div>publicaciones mas boton</div>
                 <div>
-                    <div>informacion personal</div>
-                    <div>botones</div>
-                    <div>coemnatrio</div>
+                    <div>vista lista</div>
+                    <div>vista cuadricula</div>
                 </div>
+            </div>
+            <div>
+                <div>informacion personal</div>
+                <div>botones</div>
+                <div>coemnatrio</div>
             </div>
         </div>
     </div>
